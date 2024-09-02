@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header header__filter">
+      <h1 class="h1__filter"><button onclick=window.history.back()><img src="../icons/Icons (3).svg" alt="close icon"
+            width="22px" height="24px"></button> Фильтр ВЗН
+        УП</h1>
+
+    </header>
+    <main class="main main__filter ">
+      <form action="" method="get">
+        <fieldset class="numberVZN">
+          <legend>Номер ВЗН</legend>
+          <input type="number" class="input__filter" id="invoice" required>
+        </fieldset>
+
+        <fieldset class="sender__form">
+          <legend>Отправитель</legend>
+          <input type="text" class="input__filter" id="sender" required>
+        </fieldset>
+
+        <fieldset class="recipient__form">
+          <legend>Получатель</legend>
+          <input type="text" class="input__filter" id="recipient" required>
+        </fieldset>
+        <fieldset class="date__form">
+          <legend>Дата принятия (период)</legend>
+          <input type="date" class="input__filter input__filter-width firstDate" required>-
+          <input type="date" class="input__filter input__filter-width secondDate" required>
+        </fieldset>
+        <div class=" buttons__filter">
+          <button class="button__filter search " type="submit">Поиск</button>
+          <button class="button__filter cansel" type="reset">Отмена</button>
+        </div>
+      </form>
+    </main>
+    <footer class="footer">
+      <button onclick="window.location.href = '../index.html'" class="footer__link">
+        <img src="../icons/4.svg" alt="menu icon">
+        <span>Меню</span>
+      </button>
+      <a class="footer__link" href="#">
+        <img src="../icons/5.svg" alt="scanner icon">
+        <span>Сканер </span>
+      </a>
+      <button class="footer__link" onclick=window.history.back()>
+        <img src="../icons/icon-container.svg" alt="back icon">
+        <span>Назад</span>
+      </button>
+    </footer>
+  </div>
+  <script src="../validation.js"></script>
+</body>

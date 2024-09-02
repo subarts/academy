@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <h1>Меню</h1>
+    </header>
+    <main class="main">
+      <ul class="list__menu">
+        <li>
+          <a href="./pages/tasks.html" class="item__menu"><img src=" ./icons/2.svg" alt="suitcase icon">
+            <span>Задачи</span>
+          </a>
+        </li>
+        <li>
+          <a class="item__menu" href="./pages/settings.html">
+            <img src=" ./icons/1.svg" alt="gear icon">
+            <span>Настройки</span>
+          </a>
+        </li>
+        <li>
+          <a class="item__menu disabled__link" href="./pages/about.html">
+            <img src=" ./icons/3.svg" alt="system icon">
+            <span>О системе</span>
+          </a>
+        </li>
+      </ul>
+    </main>
+    <footer class="footer">
+      <button onclick="window.location.href = '../index.html'" class="footer__link" disabled>
+        <img src="../icons/4.svg" alt="menu icon">
+        <span>Меню</span>
+      </button>
+      <a class="footer__link" href="#">
+        <img src="./icons/5.svg" alt="scanner icon">
+        <span>Сканер </span>
+      </a>
+      <button class="footer__link" onclick=window.history.back() disabled>
+        <img src="./icons/icon-container.svg" alt="back icon">
+        <span>Назад</span>
+      </button>
+
+    </footer>
+  </div>
+</body>
+
+</html>
