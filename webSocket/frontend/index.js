@@ -1,6 +1,4 @@
 const ws = new WebSocket("ws://localhost:8080")
-const username = document.querySelector(".login")
-const password = document.querySelector(".pass")
 
 /* регистрация */
 function registerUser(username, password) {
@@ -68,10 +66,12 @@ ws.onmessage = function message(message) {
 /* авторизация */
 const login = document.querySelector(".login__button")
 login.addEventListener("click", () => {
+  const username = document.querySelector(".login").value
+  const password = document.querySelector(".pass").value
   const authData = {
     type: "auth",
-    username: username.value,
-    password: password.value,
+    username,
+    password,
   }
   ws.send(JSON.stringify(authData))
 })
